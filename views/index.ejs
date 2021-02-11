@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Envíos a domicilio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/0fa68b04a7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1>Horarios disponibles</h1>
+
+    <div class="container">
+      <% data.forEach(item => { %>
+        <div class="item">
+          <p class="hour"> <%= item.Hora %> </p>
+          <i class="fas fa-motorcycle"></i>
+          <p class="motorist"> <%= item.motoristas %> </p>
+
+          <iframe name="skip" style="display: none"></iframe>
+          <form class="" action="/" method="post" target="skip">
+            <input type="hidden" name="update" value="<%= item._id %>" style="display: none">
+            <input type="hidden" name="updatedValue" value="">
+          </form>
+        </div>
+      <% }) %>
+    </div>
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

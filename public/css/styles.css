@@ -1,0 +1,64 @@
+body {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #42268C;
+  color: white;
+}
+
+h1 {
+  margin: 100px auto 50px;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+}
+
+form {
+  display: inline-block;
+}
+
+.item {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 200px;
+  height: 60px;
+  margin: 5px 3px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.motorist {
+  display: inline;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 60px;
+  bottom: -9px;
+}
+
+.hour{
+  display: inline;
+  font-size: 2rem;
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+}
+
+i {
+  transform: scale(1.5);
+  position: absolute;
+  right: 20px;
+  bottom: 22px;
+}
+
+.selected {
+  background-color: #48EB40
+}
+
+.full {
+  background-color: #EB4040;
+}
