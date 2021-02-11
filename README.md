@@ -1,1 +1,1 @@
-# Pick-shipping-time-exercise
+# Pick shipping time exercise
